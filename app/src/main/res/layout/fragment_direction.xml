@@ -1,0 +1,80 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/direction_ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    tools:context="com.abcd.paulboutot.cps406project.TestFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment_direction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/rectangle_at_the_top"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_alignParentTop="true"
+            android:background="#afdddddd"
+            android:clickable="true"
+            android:visibility="visible" />
+
+        <!-- Dummy item to prevent AutoCompleteTextView from receiving focus -->
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <EditText
+            android:id="@+id/starting_location"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="13dp"
+            android:background="#96ffffff"
+            android:ems="10"
+            android:hint="Your location"
+            android:inputType="textPersonName"
+            android:nextFocusLeft="@id/starting_location"
+            android:nextFocusUp="@id/starting_location"
+            android:text=""
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:id="@+id/final_destination"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/starting_location"
+            android:layout_below="@+id/starting_location"
+            android:layout_marginTop="13dp"
+            android:background="#96ffffff"
+            android:ems="10"
+            android:hint="Choose destination"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColorHint="@color/text_hint_selector" />
+
+        <ImageButton
+            android:id="@+id/confirm"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/starting_location"
+            android:layout_marginTop="17dp"
+            android:layout_toEndOf="@+id/starting_location"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackground"
+            android:elevation="5dp"
+            android:scaleType="centerInside"
+            android:stateListAnimator="@null"
+            app:srcCompat="@drawable/aaaaaa" />
+    </RelativeLayout>
+
+</FrameLayout>
+
+

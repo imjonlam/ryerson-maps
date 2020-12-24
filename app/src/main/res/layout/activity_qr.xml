@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_qr"
+    tools:context="com.abcd.paulboutot.cps406project.QRActivity">
+
+    <FrameLayout
+        android:id="@+id/scan_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" />
+
+    <ImageButton
+        android:id="@+id/selectImage"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginEnd="15dp"
+        android:background="?android:selectableItemBackground"
+        android:elevation="5dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:stateListAnimator="@null"
+        app:srcCompat="@drawable/preview" />
+
+</RelativeLayout>
